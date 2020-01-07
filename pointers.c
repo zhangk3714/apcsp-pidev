@@ -32,8 +32,10 @@ int main()
   printf("It stores the value %f\n", *ptrtoe);
   printf("The address of e is %f\n", &e);
 
-  *ptrtod = 420;
-  *ptrtoe = 21;
+  float t;
+  t = *ptrtod;
+  *ptrtod = *ptrtoe;
+  *ptrtoe = t;
 
   printf("The value of d is %f and the value of e is %f\n", d, e);
 
