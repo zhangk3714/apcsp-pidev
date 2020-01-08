@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-float CircleAreaFunction(float r)
+float areaOfCircle(float radius)
 {
-        return r * r * M_PI;
+        return radius * radius * M_PI;
 }
 
 int main()
@@ -14,7 +14,7 @@ float i;
 
 for (i = 3.5; i <= 12.5; i++)
 {
-	a = CircleAreaFunction(i);
+	a = areaOfCircle(i);
 	printf("The area of the circle with radius %f is %f\n", i, a);
 }
 
